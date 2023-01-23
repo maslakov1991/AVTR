@@ -1,0 +1,239 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+@font-face {
+    font-family: "Corporate-A-Bold";
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/Corporate\ A\ Bold.woff2) format("woff2"), url(../fonts/Corporate\ A\ Bold.woff) format("woff");
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: "Roboto Condensed", sans-serif;
+    background-color: #070a1b;
+    font-size: 16px;
+    line-height: 120%;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    color: inherit;
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.socials__list {
+    display: flex;
+}
+.socials__list-link {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+.socials__list-link:hover {
+    background: #c1a1d2;
+}
+
+.socials__list-item + .socials__list-item {
+    margin-left: 30px;
+}
+
+.header__bottom {
+    background-image: url(../images/header-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.header__logo{
+    margin-left: 120px;
+}
+
+.header__bottom::after {
+    content: "";
+    position: absolute;
+    background-image: url(../images/logo-small.svg);
+    width: 50px;
+    height: 50px;
+    left: 50%;
+    bottom: -25px;
+    transform: translateX(-50%);
+}
+
+.title {
+    font-family: "Corporate-A-Bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 120%;
+    color: #ffffff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 5px;
+}
+
+.title-descr {
+    font-size: 24px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 50px;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+}
+
+.concept {
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
+
+.concept__inner {
+    max-width: 900px;
+    margin-left: auto;
+}
+
+.concept__title {
+}
+
+.subtitle {
+    font-family: "Corporate-A-Bold";
+    font-size: 18px;
+    color: #f402a2;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.concept__text {
+    font-size: 24px;
+    line-height: 120%;
+    margin-bottom: 25px;
+}
+
+.concept__img {
+    max-width: 900px;
+}
+
+.premier{
+    margin-bottom: 100px;
+}
+
+.premier__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.premier__text + .premier__text {
+    margin-top: 25px;
+}
+
+.premier__left-img {
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.premier__right-img {
+    margin-bottom: 25px;
+}
+
+.premier__btn {
+    font-family: "Corporate-A-Bold";
+    font-size: 18px;
+    color: #f402a2;
+    text-transform: uppercase;
+    width: 100%;
+    border: 1px solid #f402a2;
+    padding: 14px;
+    display: block;
+    transition: all .3s;
+    text-align: center;
+}
+
+.premier__btn:hover{
+    color: #53A1CB;
+    border: 1px solid #53A1CB;;
+}
+
+.video{
+    margin-bottom: 100px;
+}
+
+.video__img{
+    margin-bottom: 25px;
+}
+
+.video__btn {
+    font-family: "Corporate-A-Bold";
+    font-size: 18px;
+    color: #f402a2;
+    text-transform: uppercase;
+    border: 1px solid #f402a2;
+    width: 100%;
+    padding: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+    gap: 10px;
+}
+
+.video__btn span{
+    padding-top: 2px;
+}
+
+.video__btn path{
+    transition: all .3s;
+}
+.video__btn:hover{
+    color: #53A1CB;
+    border: 1px solid #53A1CB;;
+}
+
+.video__btn:hover path{
+    fill: #53A1CB;
+}
